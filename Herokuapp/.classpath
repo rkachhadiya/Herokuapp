@@ -15,5 +15,6 @@
 	<classpathentry kind="lib" path="D:/Automation Testing Software/Automation workspace 1/Automation programs/Herokuapp/Resources/Drivers/jna-4.1.0.jar"/>
 	<classpathentry kind="lib" path="D:/Automation Testing Software/Automation workspace 1/Automation programs/Herokuapp/Resources/Drivers/jna-platform-4.1.0.jar"/>
 	<classpathentry kind="lib" path="D:/Automation Testing Software/Automation workspace 1/Automation programs/Herokuapp/Resources/Drivers/testng-6.11.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
