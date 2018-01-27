@@ -1,9 +1,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Herokuapp suite">
+	
+	<parameter name="appURL" value="https://www.google.co.in/"/>
+<parameter name="browserType" value="firefox"/>
+
+   <listeners>
+         <listener class-name="Herokuapp.TestCases.TestReport" />
+    </listeners>
+	
+	
 	<test verbose="2" name="Herokuapp test">
 		<classes>			
 		
 				<class name="Herokuapp.TestCases.HomePageLinks"/>
+				<class name="Herokuapp.TestCases.Pagelink1"/>
+				<class name="Herokuapp.TestCases.Pagelink2"/>
 		</classes>
 	</test>
 	<!--  Default test  -->
