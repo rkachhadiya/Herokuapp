@@ -3,7 +3,7 @@ package Herokuapp.TestCases;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Pagelink1 {
+public class Pagelink1_ggdsfgsdfghfghsrdtgrdgdfghdfsgsdgsdfhsdgsdfgsdfgsgdfgdsfgsdfgsdfgsdfgds {
 	@BeforeClass
 	private void launchDriver() throws InterruptedException {
 		System.out.println("Class 2");
