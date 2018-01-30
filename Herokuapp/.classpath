@@ -4,16 +4,15 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/byte-buddy-1.7.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/client-combined-3.6.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/client-combined-3.6.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/client-combined-3.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/client-combined-3.8.1-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/commons-codec-1.10.jar"/>
 	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/commons-exec-1.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/gson-2.8.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/guava-23.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/httpclient-4.5.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/httpcore-4.4.6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/jna-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/RKComputer/git/LocalHerokuapp/Herokuapp/Resources/Drivers/testng-6.12.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
