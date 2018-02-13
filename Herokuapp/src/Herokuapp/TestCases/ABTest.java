@@ -30,5 +30,7 @@ public class ABTest extends DriverClass{
 
 		Thread.sleep(1000);
 		driver.findElement(By.linkText("A/B Testing")).click();
+		
+		System.out.println("Page is opened!!!");
 	}
 }

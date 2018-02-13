@@ -48,6 +48,8 @@ public class HomePageLinks extends DriverClass {
 					+ " returned "
 					+ isLinkBroken(new URL(webElement.getAttribute("href"))));
 		}
+		
+		System.out.println("All links are verified!!!");
 	}
 
 	public static String isLinkBroken(URL url) throws Exception
