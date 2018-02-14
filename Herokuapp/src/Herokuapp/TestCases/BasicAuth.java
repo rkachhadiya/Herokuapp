@@ -6,7 +6,7 @@ public class BasicAuth {
 	
 	@BeforeClass
 	public void setUp(){
-		
+		System.out.println();
 	}
 
 }
