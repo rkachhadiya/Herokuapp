@@ -47,7 +47,7 @@ public class BrokenImages extends DriverClass{
 			}
 		}
 		
-		System.out.println("Number of Broken Images are: " + invalidImageCount);		
+		//System.out.println("Number of Broken Images are: " + invalidImageCount);		
 	}
 	
 	

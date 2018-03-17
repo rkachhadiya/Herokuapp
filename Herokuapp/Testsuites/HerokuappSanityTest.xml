@@ -15,7 +15,7 @@
 				<!-- <class name="Herokuapp.TestCases.HomePageLinks"/>
 				<class name="Herokuapp.TestCases.ABTest"/>
 				<class name="Herokuapp.TestCases.BasicAuth"/> -->
-				<class name="Herokuapp.TestCases.BrokenImages"/>
+				<class name="Herokuapp.TestCases.checkboxes"/>
 				
 			<!--	<class name="Herokuapp.TestCases.Pagelink1"/> -->
 			<!--	<class name="Herokuapp.TestCases.Pagelink2"/>  -->
