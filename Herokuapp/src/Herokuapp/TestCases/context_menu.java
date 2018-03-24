@@ -27,8 +27,7 @@ import Herokuapp.Base.DriverClass;
 public class context_menu extends DriverClass{
 	
 	DriverClass driverclass;
-	Robot robot; 
-		
+	Robot robot; 		
 	WebElement checkbox1, checkbox2;
 	
 	@BeforeMethod
@@ -38,7 +37,7 @@ public class context_menu extends DriverClass{
 	
 	@AfterMethod
 	private void tearDown(){
-		//driver.quit();
+		driver.quit();
 	}
 	
 	@Test
@@ -51,8 +50,6 @@ public class context_menu extends DriverClass{
 		
 		Actions action = new Actions(driver);
 		action.contextClick(el).build().perform();
-		
-		//action.contextClick(el).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.RETURN).build().perform();
 		Thread.sleep(5000);
 		
 		for(int i=0; i<5; i++){
@@ -60,15 +57,17 @@ public class context_menu extends DriverClass{
 		}
 		
 		robot.keyPress(KeyEvent.VK_ENTER);		
-		robot.keyRelease(KeyEvent.VK_ENTER);
-		
+		robot.keyRelease(KeyEvent.VK_ENTER);		
 		Thread.sleep(5000);
+		Assert.assertTrue(driver.switchTo().alert().getText().equalsIgnoreCase("You selected a context menu"), "Expected Texts are available in pop up");
+		System.out.println("Text From alert are: " + driver.switchTo().alert().getText());
+		
+		driver.switchTo().alert().accept();
 	}
 	
 	
 	private void keyPressingEvent(int i) throws AWTException, InterruptedException{
-		System.out.println(i);
-		
+		System.out.println(i);		
 		robot.keyPress(KeyEvent.VK_DOWN);
 		robot.keyRelease(KeyEvent.VK_DOWN);
 		Thread.sleep(2000);
