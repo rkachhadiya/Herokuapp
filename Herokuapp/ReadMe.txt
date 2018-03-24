@@ -1,4 +1,3 @@
-
     A/B Testing							Done
     Basic Auth (user and pass: admin)	Done
     Broken Images						Done

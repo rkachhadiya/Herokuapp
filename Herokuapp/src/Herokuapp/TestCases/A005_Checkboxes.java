@@ -18,7 +18,7 @@ import org.testng.asserts.Assertion;
 
 import Herokuapp.Base.DriverClass;
 
-public class checkboxes extends DriverClass{
+public class A005_Checkboxes extends DriverClass{
 	
 	DriverClass driverclass;
 		

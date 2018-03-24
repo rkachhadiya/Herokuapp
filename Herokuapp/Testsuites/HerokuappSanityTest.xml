@@ -1,25 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Herokuapp suite">
 	
-	<parameter name="appURL" value="https://www.google.co.in/"/>
-<parameter name="browserType" value="firefox"/>
-
-   <listeners>
-         <listener class-name="Herokuapp.TestCases.TestReport" />
-    </listeners>
-	
-	
 	<test verbose="2" name="Herokuapp test">
 		<classes>			
 		
-				<!-- <class name="Herokuapp.TestCases.HomePageLinks"/>
-				<class name="Herokuapp.TestCases.ABTest"/>
-				<class name="Herokuapp.TestCases.BasicAuth"/> 
-				<class name="Herokuapp.TestCases.checkboxes"/>-->
-				<class name="Herokuapp.TestCases.context_menu"/>
-			<!--	<class name="Herokuapp.TestCases.Pagelink1"/> -->
-			<!--	<class name="Herokuapp.TestCases.Pagelink2"/>  -->
-				
+				<class name="Herokuapp.TestCases.A000_HomePageLinks"/>
+				<class name="Herokuapp.TestCases.A001_ABTest"/>
+				<class name="Herokuapp.TestCases.A002_BasicAuth"/> 
+				<class name="Herokuapp.TestCases.A003_BrokenImages"/> 
+				<class name="Herokuapp.TestCases.A004_Challenging_DOM"/> 
+				<class name="Herokuapp.TestCases.A005_Checkboxes"/> 
+				<class name="Herokuapp.TestCases.A006_context_menu"/> 				
 			
 		</classes>
 	</test>

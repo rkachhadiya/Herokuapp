@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import Herokuapp.Base.DriverClass;
 
-public class HomePageLinks extends DriverClass {
+public class A000_HomePageLinks extends DriverClass {
 
 	DriverClass driverclass;
 	
