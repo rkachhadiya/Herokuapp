@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 
 import Herokuapp.Base.DriverClass;
 
-public class challenging_dom extends DriverClass{
+public class A003_BrokenImages extends DriverClass{
 	
 	DriverClass driverclass;
 	private int invalidImageCount;
@@ -33,7 +33,7 @@ public class challenging_dom extends DriverClass{
 	
 	@Test
 	private void testMethod(){
-		driver.navigate().to("http://the-internet.herokuapp.com/challenging_dom");
+		driver.navigate().to("http://the-internet.herokuapp.com/broken_images");
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		

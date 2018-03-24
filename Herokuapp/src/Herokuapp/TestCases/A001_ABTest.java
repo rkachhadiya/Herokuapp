@@ -14,7 +14,7 @@ import org.testng.asserts.Assertion;
 
 import Herokuapp.Base.DriverClass;
 
-public class ABTest extends DriverClass{
+public class A001_ABTest extends DriverClass{
 	
 	DriverClass driverclass;
 	

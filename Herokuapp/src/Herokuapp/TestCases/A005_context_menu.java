@@ -24,7 +24,7 @@ import org.testng.asserts.Assertion;
 
 import Herokuapp.Base.DriverClass;
 
-public class context_menu extends DriverClass{
+public class A005_context_menu extends DriverClass{
 	
 	DriverClass driverclass;
 	Robot robot; 		

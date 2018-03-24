@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import Herokuapp.Base.DriverClass;
 
-public class BasicAuth extends DriverClass{
+public class A002_BasicAuth extends DriverClass{
 	
 	DriverClass driverclass;
 	
