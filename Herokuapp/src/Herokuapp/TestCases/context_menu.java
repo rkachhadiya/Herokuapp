@@ -1,5 +1,8 @@
 package Herokuapp.TestCases;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -8,8 +11,11 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -21,6 +27,7 @@ import Herokuapp.Base.DriverClass;
 public class context_menu extends DriverClass{
 	
 	DriverClass driverclass;
+	Robot robot; 
 		
 	WebElement checkbox1, checkbox2;
 	
@@ -31,33 +38,40 @@ public class context_menu extends DriverClass{
 	
 	@AfterMethod
 	private void tearDown(){
-		driver.quit();
+		//driver.quit();
 	}
 	
 	@Test
-	private void testMethod() throws InterruptedException{
-		driver.navigate().to("http://the-internet.herokuapp.com/checkboxes");
-		
+	private void testMethod() throws InterruptedException, AWTException{
+		driver.navigate().to("http://the-internet.herokuapp.com/context_menu");
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		robot = new Robot();
+		WebElement el = driver.findElement(By.id("hot-spot"));
 		
-		boolean chk_checking = driver.findElement(By.xpath("//*[@id=\"checkboxes\"]/input[2]")).isSelected();
-				if(chk_checking == true){
-					System.out.println("Checkbox is selected");
-					driver.findElement(By.xpath("//*[@id=\"checkboxes\"]/input[2]")).click();
-				} else {
-					System.out.println("Checkbox2 is not selected");
-				}
-				Thread.sleep(10000);
-				chk_checking = driver.findElement(By.cssSelector("input[type=\"checkbox\"]")).isSelected();
-				
-				if(chk_checking == false){
-					System.out.println("Checkbox is not selected");
-					driver.findElement(By.cssSelector("input[type=\"checkbox\"]")).click();
-				} else {
-					System.out.println("Checkbox 1 is selected");
-				}
-				
-				Thread.sleep(10000);
+		Actions action = new Actions(driver);
+		action.contextClick(el).build().perform();
+		
+		//action.contextClick(el).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.RETURN).build().perform();
+		Thread.sleep(5000);
+		
+		for(int i=0; i<5; i++){
+			keyPressingEvent(i);
+		}
+		
+		robot.keyPress(KeyEvent.VK_ENTER);		
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		
+		Thread.sleep(5000);
+	}
+	
+	
+	private void keyPressingEvent(int i) throws AWTException, InterruptedException{
+		System.out.println(i);
+		
+		robot.keyPress(KeyEvent.VK_DOWN);
+		robot.keyRelease(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
 	}
 	
 
