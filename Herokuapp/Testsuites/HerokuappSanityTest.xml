@@ -3,15 +3,16 @@
 	
 	<test verbose="2" name="Herokuapp test">
 		<classes>			
-		
+		<!--
 				<class name="Herokuapp.TestCases.A000_HomePageLinks"/>
 				<class name="Herokuapp.TestCases.A001_ABTest"/>
 				<class name="Herokuapp.TestCases.A002_BasicAuth"/> 
 				<class name="Herokuapp.TestCases.A003_BrokenImages"/> 
 				<class name="Herokuapp.TestCases.A004_Challenging_DOM"/> 
 				<class name="Herokuapp.TestCases.A005_Checkboxes"/> 
-				<class name="Herokuapp.TestCases.A006_context_menu"/> 				
-			
+				<class name="Herokuapp.TestCases.A006_context_menu"/> 
+			-->			
+				<class name="Herokuapp.TestCases.A009_Dropdown"/> 		
 		</classes>
 	</test>
 	<!--  Default test  -->

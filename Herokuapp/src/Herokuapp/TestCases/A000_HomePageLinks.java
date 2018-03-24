@@ -37,7 +37,7 @@ public class A000_HomePageLinks extends DriverClass {
 
 		driver.get("http://the-internet.herokuapp.com/");
 
-		Thread.sleep(1000);
+		Thread.sleep(10000);
 
 		List<WebElement> listOfLinks = new ArrayList<WebElement>();
 		listOfLinks = driver.findElements(By.tagName("a"));
