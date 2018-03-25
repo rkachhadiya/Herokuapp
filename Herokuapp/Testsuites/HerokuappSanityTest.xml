@@ -11,10 +11,12 @@
 				<class name="Herokuapp.TestCases.A004_Challenging_DOM"/> 
 				<class name="Herokuapp.TestCases.A005_Checkboxes"/> 
 				<class name="Herokuapp.TestCases.A006_context_menu"/> 
-				<class name="Herokuapp.TestCases.A009_Dropdown"/>
-		 		<class name="Herokuapp.TestCases.A008_DragAndDrop"/> 
-			-->			
+				<class name="Herokuapp.TestCases.A007_DisapperingElements"/> 
 				<class name="Herokuapp.TestCases.A008_DragAndDrop"/> 
+				<class name="Herokuapp.TestCases.A009_Dropdown"/>
+		 		
+			-->			
+				<class name="Herokuapp.TestCases.A007_DisapperingElements"/> 
 		</classes>
 	</test>
 	<!--  Default test  -->
