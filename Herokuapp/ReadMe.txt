@@ -4,8 +4,8 @@
     Challenging DOM
     Checkboxes							Done
     Context Menu						Done
-    Disappearing Elements
-    Drag and Drop
+    Disappearing Elements				Done
+    Drag and Drop						Done - Issue in Selenium Framework
     Dropdown							Done
     Dynamic Content
     Dynamic Controls
@@ -35,5 +35,5 @@
     Slow Resources
     Sortable Data Tables
     Status Codes
-    Typos
+    Typos								Done
     WYSIWYG Editor
