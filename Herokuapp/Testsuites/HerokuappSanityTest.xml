@@ -14,9 +14,9 @@
 				<class name="Herokuapp.TestCases.A007_DisapperingElements"/> 
 				<class name="Herokuapp.TestCases.A008_DragAndDrop"/> 
 				<class name="Herokuapp.TestCases.A009_Dropdown"/>
-		 		
+		 		<class name="Herokuapp.TestCases.A038_Typos"/> 
 			-->			
-				<class name="Herokuapp.TestCases.A038_Typos"/> 
+				<class name="Herokuapp.TestCases.A037_Status_Codes"/> 
 		</classes>
 	</test>
 	<!--  Default test  -->
