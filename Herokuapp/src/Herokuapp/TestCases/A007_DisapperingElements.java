@@ -21,8 +21,7 @@ import Herokuapp.Base.DriverClass;
 
 public class A007_DisapperingElements extends DriverClass{
 	
-	private WebElement bfr_Home, bfr_About, bfr_contactUs, bfr_portfolio, bfr_gallery;
-	private WebElement aftr_Home, aftr_About, aftr_contactUs, aftr_portfolio, aftr_gallery;
+	private WebElement bfr_Home;
 	Robot robot; 
 	Actions action;
 	@BeforeClass

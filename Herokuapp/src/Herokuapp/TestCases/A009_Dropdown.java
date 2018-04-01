@@ -17,8 +17,7 @@ public class A009_Dropdown extends DriverClass{
 	@BeforeClass
 	private void setUp_Browser() throws InterruptedException,
 			FileNotFoundException {
-		setUp();	
-		
+		setUp();		
 	}
 	
 	@AfterClass
