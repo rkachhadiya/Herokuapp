@@ -1,11 +1,18 @@
 package Herokuapp.Base;
 
 import java.io.FileNotFoundException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.logging.Level;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class DriverClass extends Baseclass {
 
@@ -26,7 +33,7 @@ public class DriverClass extends Baseclass {
 			options.addArguments("--disable-save-password");
 			options.addArguments("disable-infobars");
 			options.addArguments("--disable-notifications");
-
+			
 			System.out.println("launching chrome browser");
 			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 			driver = new ChromeDriver(options);
