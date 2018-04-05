@@ -29,7 +29,7 @@ public class A009_Dropdown extends DriverClass{
 	private void Dropdown() throws InterruptedException{
 		driver.get("http://the-internet.herokuapp.com/dropdown");
 
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		WebElement ele_Dropdown = driver.findElement(By.id("dropdown"));
 		
